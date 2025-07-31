@@ -1,0 +1,265 @@
+/* --- Mobile --- */
+
+@media (max-width: 420px) {
+
+    .hero-section {
+        padding-top: 30%;
+    }
+
+    .hero-section::after {
+        top: 52%;
+        left: 5vw;
+        width: 30%;
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+        top: 20%;
+        left: 5vw;
+        width: 90vw;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+        top: 55%;
+        left: 5vw;
+        width: 90vw;
+    }
+
+    .valorantlogo {
+        width: 210px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        font-size: 1.5rem;
+    }
+
+    .about h2,
+    .points-game h2 {
+        font-size: 36px;
+        width: 80vw;
+    }
+
+    .points-game h2{
+        margin-top: 70px;
+    }
+
+    .points-game .img-fluid {
+        width: 32px;
+        height: 32px;
+        margin-top: 20px;
+    }
+
+    .about p,
+    .points-game p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .about::after {
+        top: 41%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    .points-game::after{
+        top: 27%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    .about .btn,
+    .btn-download {
+        width: 200px;
+        height: 40px;
+        font-size: 1rem
+    }
+
+    .carousel-container::before,
+    .carousel-container::after {
+        width: 10%;
+    }
+
+    .prev {
+        left: 5px;
+        right: auto;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .next {
+        left: 5px;
+        right: auto;
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-container .owl-carousel .item img {
+        height: 200px;
+    }
+
+    .download {
+        height: 253px;
+        padding: 50px 20px;
+    }
+
+    .download h2 {
+        font-size: 36px;
+        width: 80vw;
+        margin: 0 auto 20px auto;
+        margin-bottom: 20px;
+    }
+
+    .download .btn {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .footer-logo {
+        width: 140px;
+        height: auto;
+    }
+
+    .arrow {
+        bottom: 10px;
+    }
+
+    @keyframes move {
+        0% { transform: translateX(-30%) translateY(0); }
+        50% { transform: translateX(-30%) translateY(40px); }
+        100% { transform: translateX(-30%) translateY(0); }
+    }
+}
+
+/* --- Tablet --- */
+
+@media (max-width: 760px) {
+    .hero-section {
+        padding-top: 25%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-section::after {
+        top: 55%; 
+        left: 10vw;
+        width: 12%;
+    }
+
+    .hero-section h1 {
+        font-size: 50px;
+        top: 25%;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .hero-section p {
+        font-size: 17px;
+        top: 57%;
+        left: 10vw;
+        width: 50vw;
+    }
+
+    .about {
+        height: 634px;
+        padding: 50px 20px;
+    }
+
+    .about h2 {
+        font-size: 60px;
+        width: 90vw;
+        margin: 0 auto 20px auto;
+        margin-bottom: 42px;
+    }
+
+    .about p {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .about::after {
+        top: 42%;
+        left: 50%;
+        transform: translateX(-35%);
+        width: 100px;
+    }
+
+    .points-game {
+        height: 630px;
+        padding: 50px 20px;
+    }
+
+    .points-game h2 {
+        font-size: 57px;
+        margin-top: 0;
+    }
+
+    .points-game .img-fluid {
+        margin-top: 50px;
+    }
+
+    .points-game p {
+        width: 90%;
+    }
+
+    .points-game::after {
+        top: 29%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    .carousel-container::before,
+    .carousel-container::after {
+        width: 25%;
+    }
+
+    .prev {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
+    .download {
+        height: 482px;
+        padding: 50px 20px;
+    }
+
+    .download h2 {
+        font-size: 60px;
+        width: 90vw;
+        margin: 0 auto 20px auto;
+        margin-bottom: 42px;
+    }
+
+    .btn-download {
+        width: 200px;
+        height: 40px;
+    }
+
+    .arrow {
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @keyframes move {
+        0% { transform: translateX(-30%) translateY(0); }
+        50% { transform: translateX(-30%) translateY(40px); }
+        100% { transform: translateX(-30%) translateY(0); }
+    }
+}

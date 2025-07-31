@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-orange: #fa8550;
+    --color-black: #333333;
+    --color-white: #ffffff;
+    --color-black-2: #000000;
+    --color-white-2: #f0f0f0;
+    --color-orange-hover: #ff651e;
+    --color-wine: #860101;
+    --color-white-3: #f8f0e5;
+}
+
+/* ======== Hero Section ======== */
+.hero-section {
+    background: url('../img/image-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgb(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-section::after {
+  content: "";
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  top: 22.5vw;
+  left: 11.5vw;
+  width: 65px;
+  height: 3px;
+  background-color: var(--color-white);
+  z-index: 2;
+}
+
+.hero-section.container {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.hero-section h1 {
+    z-index: 3;
+    font-size: 3rem;
+    position: absolute;
+    top: 10vw;
+    left: 11.5vw;
+    width: 90vw;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.hero-section p {
+    z-index: 3;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 23vw;
+    left: 11.5vw;
+    width: 80vw;
+    min-width: 180px;
+    max-width: 255px;
+}
+/* ======== /Hero Section ======== */
+
+/* ======== Navbar ======== */
+.valorantlogo {
+    width: 210px;
+    height: 30px;
+}
+
+.navbar {
+    box-shadow: 0px 3px 6px #00000029;
+    font-size: 16px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: var(--color-orange);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--color-orange);
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color-orange);
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link:active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+    text-align: right;
+}
+/* ======== /Navbar ======== */
+
+/* ======== Section About ======== */
+.about {
+    background-color: var(--color-orange) !important;
+    width: 100%;
+    height: 70vh;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.about h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 23px;
+    width: 820px;
+    height: 72px;
+}
+
+.about p {
+    font-size: 14px;
+    margin: 10px auto 20px auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+.about .btn {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    border-radius: 30px !important;
+    border: none;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    margin: 16px;
+    text-align: center;
+}
+
+.about .btn:hover {
+    background: var(--color-black);
+    box-shadow: 0px 10px 40px -12px var(--color-wine);
+    color: var(--color-white);
+}
+
+.about::after {
+  content: "";
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  top: 170px;
+  left: 640px;
+  width: 70px;
+  height: 3px;
+  background-color: var(--color-white);
+  z-index: 5;
+}
+/* ======== /Section About ======== */
+
+/* ======== Points Game Section ======== */
+.points-game {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 70vh;
+    color: var(--color-black-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.points-game h2 {
+    color: var(--color-black-2);
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.points-game .img-fluid {
+    width: 32px;
+    height: 32px;
+    margin-top: 47px;
+}
+
+.points-game h3 {
+    color: var(--color-black-2);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.points-game p {
+    font-size: 14px;
+    margin: 10px auto 20px auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+.points-game::after {
+  content: "";
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  top: 180px;
+  left: 640px;
+  width: 70px;
+  height: 3px;
+  background-color: var(--color-orange);
+  z-index: 5;
+}
+/* ======== /Points Game Section ======== */
+
+/* ======== Carousel ======== */
+.carousel-container {
+    position: relative;
+}
+
+.carousel-container::before, 
+.carousel-container::after {
+    content: "";
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
+    height: 100%;
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+}
+
+.carousel-container::before {
+    left: 0;
+    top: 0;
+}
+.carousel-container::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.carousel-container .owl-carousel .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem distorcer */
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-orange);
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 100px;
+}
+
+.prev {
+    left: 300px;
+}
+
+.next {
+    right: 300px; 
+}
+
+#img {
+    width: 35px;
+    height: 35px;
+}
+/* ======== /Carousel ======== */
+
+/* ======== Download Section ======== */
+.download {
+    background-color: var(--color-black) !important;
+    width: 100%;
+    height: 60vh;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+
+#btn-download {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 30px !important;
+    border: none;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    margin: 16px;
+    display: inline-block;
+}
+
+#btn-download:hover {
+    background: var(--color-orange-hover);
+    box-shadow: 0px 10px 40px -12px var(--color-wine);
+    color: var(--color-white);
+}
+/* ======== /Download Section ======== */
+
+/* ======== Footer ======== */
+.footer {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    width: 178px;
+    height: 200px;
+}
+/* ======== /Footer ======== */
+
+/* ======== Arrow Animation ======== */
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 32px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    animation: move 1.5s infinite ease-in-out;
+    height: 20%;
+}
+
+.arrow img {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes move {
+    0% { transform: translateX(-30%) translateY(0); }
+    50% { transform: translateX(-30%) translateY(70px); }
+    100% { transform: translateX(-30%) translateY(0); }
+}
+/* ======== /Arrow Animation ======== */
