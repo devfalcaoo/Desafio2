@@ -1,265 +1,139 @@
-/* --- Mobile --- */
-
-@media (max-width: 420px) {
-
-    .hero-section {
-        padding-top: 30%;
-    }
-
-    .hero-section::after {
-        top: 52%;
-        left: 5vw;
-        width: 30%;
-    }
-
-    .hero-section h1 {
-        font-size: 48px;
-        top: 20%;
-        left: 5vw;
-        width: 90vw;
-    }
-
-    .hero-section p {
-        font-size: 20px;
-        top: 55%;
-        left: 5vw;
-        width: 90vw;
-    }
-
-    .valorantlogo {
-        width: 210px;
-        height: auto;
-    }
-
-    .navbar-toggler {
-        font-size: 1.5rem;
-    }
-
-    .about h2,
-    .points-game h2 {
-        font-size: 36px;
-        width: 80vw;
-    }
-
-    .points-game h2{
-        margin-top: 70px;
-    }
-
-    .points-game .img-fluid {
-        width: 32px;
-        height: 32px;
-        margin-top: 20px;
-    }
-
-    .about p,
-    .points-game p {
-        font-size: 18px;
-        width: 100%;
-    }
-
-    .about::after {
-        top: 41%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-    }
-
-    .points-game::after{
-        top: 27%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-    }
-
-    .about .btn,
-    .btn-download {
-        width: 200px;
-        height: 40px;
-        font-size: 1rem
-    }
-
-    .carousel-container::before,
-    .carousel-container::after {
-        width: 10%;
-    }
-
-    .prev {
-        left: 5px;
-        right: auto;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .next {
-        left: 5px;
-        right: auto;
-        width: 40px;
-        height: 40px;
-    }
-
-    .carousel-container .owl-carousel .item img {
-        height: 200px;
-    }
-
-    .download {
-        height: 253px;
-        padding: 50px 20px;
-    }
-
-    .download h2 {
-        font-size: 36px;
-        width: 80vw;
-        margin: 0 auto 20px auto;
-        margin-bottom: 20px;
-    }
-
-    .download .btn {
-        width: 200px;
-        height: 60px;
-        font-size: 24px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer {
-        height: 150px;
-    }
-
-    .footer-logo {
-        width: 140px;
-        height: auto;
-    }
-
-    .arrow {
-        bottom: 10px;
-    }
-
-    @keyframes move {
-        0% { transform: translateX(-30%) translateY(0); }
-        50% { transform: translateX(-30%) translateY(40px); }
-        100% { transform: translateX(-30%) translateY(0); }
-    }
-}
-
-/* --- Tablet --- */
-
+/* --- 760px --- */
 @media (max-width: 760px) {
-    .hero-section {
-        padding-top: 25%;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .hero-section::after {
-        top: 55%; 
-        left: 10vw;
-        width: 12%;
-    }
-
+    /* -- Hero Section -- */
     .hero-section h1 {
-        font-size: 50px;
-        top: 25%;
-        left: 10vw;
-        width: 70vw;
+        font-size: 3rem;
+        left: 8vw;
+        top: 25vw;
+        max-width: 80%;
     }
 
     .hero-section p {
-        font-size: 17px;
-        top: 57%;
-        left: 10vw;
-        width: 50vw;
+        top: 60vw;
+        left: 8vw;
+        font-size: 0.98rem;
     }
 
+    .hero-section::after {
+        top: 56vw;
+        left: 8vw;
+    }
+
+    /* -- Seção Sobre -- */
     .about {
-        height: 634px;
-        padding: 50px 20px;
+        height: auto;
+        padding: 80px 20px;
     }
 
     .about h2 {
-        font-size: 60px;
-        width: 90vw;
-        margin: 0 auto 20px auto;
-        margin-bottom: 42px;
-    }
-
-    .about p {
-        font-size: 20px;
-        width: 95%;
+        font-size: 2rem;
+        width: 100%;
+        height: auto;
     }
 
     .about::after {
-        top: 42%;
+        top: 179px;
         left: 50%;
-        transform: translateX(-35%);
-        width: 100px;
+        transform: translateX(-50%);
     }
 
+    /* -- Seção Pontos do Jogo -- */
     .points-game {
-        height: 630px;
-        padding: 50px 20px;
+        height: auto;
+        padding: 80px 0;
     }
-
+    
     .points-game h2 {
-        font-size: 57px;
-        margin-top: 0;
-    }
-
-    .points-game .img-fluid {
-        margin-top: 50px;
-    }
-
-    .points-game p {
-        width: 90%;
+        font-size: 2rem;
     }
 
     .points-game::after {
-        top: 29%;
+        top: 200px;
         left: 50%;
         transform: translateX(-50%);
-        width: 100px;
     }
-
-    .carousel-container::before,
-    .carousel-container::after {
-        width: 25%;
-    }
-
+    
+    /* -- Carrossel -- */
     .prev {
         left: 20px;
     }
-
     .next {
         right: 20px;
     }
+    
+    .carousel-container::before, 
+    .carousel-container::after {
+        width: 20%; /* Diminui o gradiente lateral */
+    }
 
+    /* -- Seção Download -- */
     .download {
-        height: 482px;
-        padding: 50px 20px;
+        height: auto;
+        padding: 100px 20px;
+    }
+}
+
+
+/* --- 420px --- */
+@media (max-width: 420px) {
+    /* -- Navbar -- */
+    .valorantlogo {
+        width: 150px;
+        height: auto;
     }
 
-    .download h2 {
-        font-size: 60px;
-        width: 90vw;
-        margin: 0 auto 20px auto;
-        margin-bottom: 42px;
+    /* -- Hero Section -- */
+    .hero-section h1 {
+        font-size: 3rem;
+        top: 35vw;
+    }
+    .hero-section p {
+        top: 100vw;
+        font-size: 0.9rem;
+    }
+    .hero-section::after {
+        top: 93vw;
     }
 
-    .btn-download {
-        width: 200px;
-        height: 40px;
+    /* -- Seção Sobre -- */
+    .about h2 {
+        font-size: 3rem;
+    }
+    .about::after {
+        top: 250px;
     }
 
+    /* -- Seção Pontos do Jogo -- */
+    .points-game h2 {
+        font-size: 3rem;
+    }
+    .points-game .col-12 {
+        margin-bottom: 20px; /* Adiciona espaço entre os itens */
+    }
+    .points-game::after {
+        top: 285px;
+    }
+
+    /* -- Carrossel -- */
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
+
+    #img { 
+        width: 25px;
+        height: 25px;
+    }
+    
+    /* -- Footer -- */
+    .footer-logo {
+        width: 120px;
+        height: auto;
+    }
+    
     .arrow {
         bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    @keyframes move {
-        0% { transform: translateX(-30%) translateY(0); }
-        50% { transform: translateX(-30%) translateY(40px); }
-        100% { transform: translateX(-30%) translateY(0); }
     }
 }

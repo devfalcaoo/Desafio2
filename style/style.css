@@ -44,7 +44,7 @@
   display: inline-block;
   border-radius: 3px;
   position: absolute;
-  top: 22.5vw;
+  top: 22vw;
   left: 11.5vw;
   width: 65px;
   height: 3px;
@@ -192,8 +192,8 @@
   display: inline-block;
   border-radius: 3px;
   position: absolute;
-  top: 170px;
-  left: 640px;
+  top: 185px;
+  left: 710px;
   width: 70px;
   height: 3px;
   background-color: var(--color-white);
@@ -249,8 +249,8 @@
   display: inline-block;
   border-radius: 3px;
   position: absolute;
-  top: 180px;
-  left: 640px;
+  top: 185px;
+  left: 710px;
   width: 70px;
   height: 3px;
   background-color: var(--color-orange);
